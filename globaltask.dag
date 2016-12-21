@@ -1,0 +1,5 @@
+job A rawtompeg.condor
+job B mpegtots.condor
+job C tstohls.condor
+PARENT A CHILD B
+PARENT B CHILD C

@@ -1,0 +1,10 @@
+executable = tstohls 
+arguments = test01.ts index.m3u8
+Universe        = vanilla
+#Requirements = (machine == "uvcluster-11.cloud.univalle.edu.co" || machine == "uvcluster-12.cloud.univalle.edu.co" || machine == "uvcluster-13.cloud.univalle.edu.co")
+error = log/err.$(cluster).$(process)
+log = log/log.$(cluster).$(process)
+should_transfer_files = YES
+transfer_input_files    = test01.ts
+when_to_transfer_output = ON_EXIT
+queue

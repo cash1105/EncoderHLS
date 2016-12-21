@@ -1,0 +1,10 @@
+executable = mpegtots 
+arguments = test01.mpg test01.ts
+Universe        = vanilla
+#Requirements = (machine == "uvcluster-11.cloud.univalle.edu.co" || machine == "uvcluster-12.cloud.univalle.edu.co" || machine == "uvcluster-13.cloud.univalle.edu.co")
+error = log/err.$(cluster).$(process)
+log = log/log.$(cluster).$(process)
+should_transfer_files = YES
+transfer_input_files    = test01.mpg
+when_to_transfer_output = ON_EXIT
+queue
